@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../assets/css/fonts.css" />
+    <link rel="stylesheet" href="../assets/css/common.css" />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <style>
+      /* effect */
+      #effect > .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      #effect .effLink {
+        width: 45%;
+        min-height: 600px;
+        position: relative;
+        margin: 2%;
+      }
+      #effect .effLink svg {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        transform: rotate(15deg);
+        top: -30px;
+        right: -20px;
+        z-index: 10;
+      }
+      #effect .effLink > path {
+        stroke-width: 5;
+      }
+      /* effType */
+      .effType {
+        width: 100%;
+        height: 100%;
+        border-style: solid;
+        background: var(--lime);
+        overflow: hidden;
+      }
+      .effType .bar {
+        height: 45px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 2.3;
+        padding-left: 20px;
+        border-bottom-style: solid;
+        background: var(--black);
+      }
+      .effType iframe {
+        position: relative;
+        top: 0;
+        left: -15px;
+        width: 107%;
+        height: 100%;
+        overflow: hidden;
+      }
+      .effType img {
+        width: 100%;
+        transform: scale(0.99);
+        overflow: hidden;
+      }
+      .effType img:hover {
+        transform: scale(1);
+      }
+      /* effType border */
+      .effType,
+      .effType .bar {
+        border-width: 4px;
+        border-color: var(--lime);
+        border-bottom-width: 4px;
+        border-bottom-color: var(--lime);
+      }
+      .effType svg > rect {
+        stroke-width: 3;
+      }
+      .effType svg > path {
+        stroke-width: 4;
+      }
+      .effType.yellow,
+      .effType.yellow .bar,
+      .effType.yellow svg > rect,
+      .effType.yellow svg > path {
+        background: var(--yellow);
+        border-color: var(--yellow);
+        stroke: var(--yellow);
+      }
+      .effType.yellow .bar {
+        background: var(--black);
+      }
+      .effType.yellow a:hover {
+        color: var(--yellow);
+      }
+    </style>
+  </head>
+  <body>
+    <section id="effect">
+      <header class="header">LET’s see the effect</header>
+      <!-- //header -->
+      <div class="container">
+        <a class="effLink" href="">
+          <svg
+            class="svg arrow"
+            width="90"
+            height="90"
+            viewBox="0 0 90 90"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="3"
+              y="3.09546"
+              width="83.6776"
+              height="83.6776"
+              fill="black"
+              stroke="#8DFFA8"
+              stroke-width="3"
+            />
+            <path
+              d="M21.1335 70.0262L68.6661 22.4937"
+              stroke="#8DFFA8"
+              stroke-width="5"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M33.3276 21.8912L70.1909 20.9722L69.2719 57.8355"
+              stroke="#8DFFA8"
+              stroke-width="5"
+              stroke-miterlimit="10"
+            />
+          </svg>
+          <div class="effType">
+            <div class="bar">seach</div>
+            <iframe
+              src="https://gayeongchoi.github.io/webs_class/javascript/effect/searchEffect01.html"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </a>
+        <!-- //effType no.1 -->
+        <a class="effLink" href="">
+          <svg
+            class="svg arrow"
+            width="90"
+            height="90"
+            viewBox="0 0 90 90"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="3"
+              y="3.09546"
+              width="83.6776"
+              height="83.6776"
+              fill="black"
+              stroke="#8DFFA8"
+              stroke-width="3"
+            />
+            <path
+              d="M21.1335 70.0262L68.6661 22.4937"
+              stroke="#8DFFA8"
+              stroke-width="5"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M33.3276 21.8912L70.1909 20.9722L69.2719 57.8355"
+              stroke="#8DFFA8"
+              stroke-width="5"
+              stroke-miterlimit="10"
+            />
+          </svg>
+          <div class="effType">
+            <div class="bar">seach</div>
+            <iframe
+              src="https://gayeongchoi.github.io/webs_class/javascript/effect/searchEffect01.html"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </a>
+        <!-- //effType no.2 -->
+
+        <a class="effLink" href="">
+          <svg
+            class="svg arrow"
+            width="90"
+            height="90"
+            viewBox="0 0 90 90"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="3"
+              y="3.09546"
+              width="83.6776"
+              height="83.6776"
+              fill="black"
+              stroke="#8DFFA8"
+              stroke-width="3"
+            />
+            <path
+              d="M21.1335 70.0262L68.6661 22.4937"
+              stroke="#8DFFA8"
+              stroke-width="5"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M33.3276 21.8912L70.1909 20.9722L69.2719 57.8355"
+              stroke="#8DFFA8"
+              stroke-width="5"
+              stroke-miterlimit="10"
+            />
+          </svg>
+          <div class="effType yellow">
+            <div class="bar">Slider</div>
+            <iframe
+              src="https://gayeongchoi.github.io/webs_class/javascript/effect/sliderEffect01.html"
+              frameborder="0"
+            ></iframe>
+            <img src="./assets/img/work_project.png" alt="" />
+          </div>
+        </a>
+        <!-- //effType no.3 -->
+
+        <div class="effType">
+          <a href="">
+            <svg
+              class="svg arrow"
+              width="90"
+              height="90"
+              viewBox="0 0 90 90"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="3"
+                y="3.09546"
+                width="83.6776"
+                height="83.6776"
+                fill="black"
+                stroke="#8DFFA8"
+                stroke-width="3"
+              />
+              <path
+                d="M21.1335 70.0262L68.6661 22.4937"
+                stroke="#8DFFA8"
+                stroke-width="5"
+                stroke-miterlimit="10"
+              />
+              <path
+                d="M33.3276 21.8912L70.1909 20.9722L69.2719 57.8355"
+                stroke="#8DFFA8"
+                stroke-width="5"
+                stroke-miterlimit="10"
+              />
+            </svg>
+            <div class="bar">mouse</div>
+            <img src="./assets/img/work_project.png" alt="" />
+          </a>
+        </div>
+        <!-- //effType no.4 -->
+
+        <div class="effType">
+          <a href="">
+            <svg
+              class="svg arrow"
+              width="90"
+              height="90"
+              viewBox="0 0 90 90"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="3"
+                y="3.09546"
+                width="83.6776"
+                height="83.6776"
+                fill="black"
+                stroke="#8DFFA8"
+                stroke-width="3"
+              />
+              <path
+                d="M21.1335 70.0262L68.6661 22.4937"
+                stroke="#8DFFA8"
+                stroke-width="5"
+                stroke-miterlimit="10"
+              />
+              <path
+                d="M33.3276 21.8912L70.1909 20.9722L69.2719 57.8355"
+                stroke="#8DFFA8"
+                stroke-width="5"
+                stroke-miterlimit="10"
+              />
+            </svg>
+            <div class="bar">Parallax</div>
+            <img src="./assets/img/work_project.png" alt="" />
+          </a>
+        </div>
+        <!-- //effType no.5 -->
+
+        <div class="effType yellow">
+          <a href="">
+            <svg
+              class="svg arrow"
+              width="90"
+              height="90"
+              viewBox="0 0 90 90"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="3"
+                y="3.09546"
+                width="83.6776"
+                height="83.6776"
+                fill="black"
+                stroke="#8DFFA8"
+                stroke-width="3"
+              />
+              <path
+                d="M21.1335 70.0262L68.6661 22.4937"
+                stroke="#8DFFA8"
+                stroke-width="5"
+                stroke-miterlimit="10"
+              />
+              <path
+                d="M33.3276 21.8912L70.1909 20.9722L69.2719 57.8355"
+                stroke="#8DFFA8"
+                stroke-width="5"
+                stroke-miterlimit="10"
+              />
+            </svg>
+            <div class="bar">gasp animationn</div>
+            <img src="./assets/img/work_project.png" alt="" />
+          </a>
+        </div>
+        <!-- //effType no.6 -->
+      </div>
+    </section>
+  </body>
+</html>

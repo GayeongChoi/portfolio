@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../assets/css/fonts.css" />
+    <link rel="stylesheet" href="../assets/css/common.css" />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <style>
+      .cursor {
+        position: absolute;
+        left: -100px;
+        top: -100px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        background-color: rgb(255, 255, 255, 0.1);
+        user-select: none;
+        pointer-events: none;
+        transition: background-color 0.2s, border-color 0.2s, transform 0.6s;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="scrip">
+      <div class="cursor"></div>
+      <header class="header">look at script</header>
+      <!-- //header -->
+
+      <div class="scrip__inner">
+        <div class="scripType music">
+          <div class="scrip__img">
+            <img class="img" src="./assets/img/music.png" alt="" />
+          </div>
+          <div class="container">
+            <a
+              href="https://gayeongchoi.github.io/webs_class/javascript/effect/musicPlayer/index.html"
+              class="siteView"
+            >
+              <p>site View</p>
+              <svg
+                class="svg arrow"
+                width="90"
+                height="90"
+                viewBox="0 0 90 90"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="3"
+                  y="3.09546"
+                  width="83.6776"
+                  height="83.6776"
+                  fill="black"
+                  stroke="#8DFFA8"
+                  stroke-width="5"
+                />
+                <path
+                  d="M21.1335 70.0262L68.6661 22.4937"
+                  stroke="#8DFFA8"
+                  stroke-width="5"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M33.3276 21.8912L70.1909 20.9722L69.2719 57.8355"
+                  stroke="#8DFFA8"
+                  stroke-width="5"
+                  stroke-miterlimit="10"
+                />
+              </svg>
+            </a>
+
+            <div class="scrip__title">
+              music <br />
+              javascript
+            </div>
+            <div class="scrip__text">
+              음악 플레이어를 구현하였습니다. <br />
+              음악 재생하기, 이전곡, 다음 곡 재생과 반복 듣기, 한번 반복, 그에
+              따라 아이콘 변경하기 곡이 끝나면 다음 곡 재생하기와 뮤직 리스트
+              펼치기 , <br />
+              리스트를 클릭하면 해당 곡 재생하기와 재생곡 시간에 따라 움직이는
+              바와 재생 시간 표기, 재생바를 누르면 해당 지점 음악이
+              재생되도록하고 곡을 재생하면 <br />
+              변경되는 이미지나 오디오명도 변경되어 출력되도록 하였습니다.
+            </div>
+          </div>
+          <!-- //container -->
+        </div>
+        <!-- //scripType music -->
+
+        <div class="scripType card">
+          <div class="scrip__img">
+            <img class="img" src="./assets/img/card2.png" alt="" />
+          </div>
+          <!-- //scrip__img : script_card -->
+          <div class="container">
+            <a
+              href="https://gayeongchoi.github.io/webs_class/game/index2.html"
+              class="siteView"
+            >
+              <p>site View</p>
+              <svg
+                class="svg arrow"
+                width="90"
+                height="90"
+                viewBox="0 0 90 90"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="3"
+                  y="3.09546"
+                  width="83.6776"
+                  height="83.6776"
+                  fill="black"
+                  stroke="#8DFFA8"
+                  stroke-width="5"
+                />
+                <path
+                  d="M21.1335 70.0262L68.6661 22.4937"
+                  stroke="#8DFFA8"
+                  stroke-width="5"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M33.3276 21.8912L70.1909 20.9722L69.2719 57.8355"
+                  stroke="#8DFFA8"
+                  stroke-width="5"
+                  stroke-miterlimit="10"
+                />
+              </svg>
+            </a>
+
+            <div class="scrip__title">
+              memory<br />
+              javascript
+            </div>
+            <div class="scrip__text">
+              카드 암기 게임을 만들었습니다. <br />
+              몇 초 동안 카드 안의 그림을 보여주고 다시 카드를 뒤집어서 뒤집힌
+              카드의 짝을 이루는 그림을 맞추는 게임입니다. <br />
+              스타트 버튼을 누르면 게임 규칙과 설명이 나옵니다. 게임을 플레이
+              하시고 나시면 합산 점수와 연속으로 맞춘 갯수 등이 스코어가
+              나타납니다. <br />
+              그 외 틀리면 이미지가 흔들리고 카드 뒤집는 도중에 다른 카드가
+              뒤집히지 않도록 또 맞춘 카드들은 뒤집히지 않게 하도록
+              구현하였습니다.
+            </div>
+          </div>
+          <!-- //container -->
+        </div>
+        <!-- //scripType card-->
+
+        <div class="scripType typing">
+          <div class="scrip__img">
+            <img class="img" src="../assets/img/script_typing.png" alt="" />
+          </div>
+          <!-- //scrip__img : script_typing -->
+          <div class="container">
+            <a
+              href="https://gayeongchoi.github.io/webs_class/javascript/effect/typingGame/index.html"
+              class="siteView"
+            >
+              <p>site View</p>
+              <svg
+                class="svg arrow"
+                width="90"
+                height="90"
+                viewBox="0 0 90 90"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="3"
+                  y="3.09546"
+                  width="83.6776"
+                  height="83.6776"
+                  fill="black"
+                  stroke="#8DFFA8"
+                  stroke-width="5"
+                />
+                <path
+                  d="M21.1335 70.0262L68.6661 22.4937"
+                  stroke="#8DFFA8"
+                  stroke-width="5"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M33.3276 21.8912L70.1909 20.9722L69.2719 57.8355"
+                  stroke="#8DFFA8"
+                  stroke-width="5"
+                  stroke-miterlimit="10"
+                />
+              </svg>
+            </a>
+
+            <div class="scrip__title">
+              typing <br />
+              javascript
+            </div>
+            <div class="scrip__text">
+              영문 타이핑 연습을 할 수 있는 게임입니다. <br />
+              입력칸에 예제에 맞춰 타이핑하면 타이머가 움직이기 시작하면서
+              글자가 파란색으로 변합니다 틀리면 빨간색으로 표기 됩니다. <br />
+              1분동안한 타이핑 실수와 맞은 갯수등의 스코어가 하단에 표시 됩니다
+              1분 동안 얼마나 타이핑 할 수 있는 지 확인해보세요!
+            </div>
+          </div>
+          <!-- //container -->
+        </div>
+        <!-- //scripType typing-->
+
+        <div class="scripType tertris">
+          <div class="scrip__img">
+            <img class="img" src="./assets/img/tetris.png" alt="" />
+          </div>
+          <!-- //scrip__img : script_tertris -->
+          <div class="container">
+            <a
+              href="https://gayeongchoi.github.io/webs_class/game/tetrisGame/index.html"
+              class="siteView"
+            >
+              <p>site View</p>
+              <svg
+                class="svg arrow"
+                width="90"
+                height="90"
+                viewBox="0 0 90 90"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="3"
+                  y="3.09546"
+                  width="83.6776"
+                  height="83.6776"
+                  fill="black"
+                  stroke="#8DFFA8"
+                  stroke-width="5"
+                />
+                <path
+                  d="M21.1335 70.0262L68.6661 22.4937"
+                  stroke="#8DFFA8"
+                  stroke-width="5"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M33.3276 21.8912L70.1909 20.9722L69.2719 57.8355"
+                  stroke="#8DFFA8"
+                  stroke-width="5"
+                  stroke-miterlimit="10"
+                />
+              </svg>
+            </a>
+
+            <div class="scrip__title">
+              tetris <br />
+              javascript
+            </div>
+            <div class="scrip__text">
+              테트리스 게임입니다. 특정 모양의 블록을 쌓아올리는 게임입니다.
+              <br />
+              특정 모양의 블록을 쌓아올려서 한줄을 완성하면 사라지고 블록을
+              천장까지 닿지 않게 하고 최대한 점수를 내야합니다. <br />블록은
+              css로 구현하고 블록 교체와 내려오는 애니메이션, 블록을 쌓아올릴 수
+              있도록 바닥에 닿으면 블록이 사라지않고 쌓인 블록 위에 <br />
+              블록을 쌓을 수 있고 천장까지 닿으면 더 이상 블록이 내려오면
+              게임오버 되도록 하였습니다.
+            </div>
+          </div>
+          <!-- //container -->
+        </div>
+        <!-- //scripType tertris-->
+      </div>
+      <!-- //scrip__inner -->
+    </section>
+
+    <script>
+      window.addEventListener("mousemove", (e) => {
+        // document.querySelector(".cursor").style.left = e.clientX - 25 + "px";
+        // document.querySelector(".cursor").style.top = e.clientY - 25 + "px";
+
+        let x = e.offsetX - 25 + "px";
+        let y = e.offsetY - 25 + "px";
+        document.querySelector(".cursor").style.cssText =
+          "left:" + x + "; top:" + y;
+      });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#testSpan").hover(
+          function () {
+            $("#testSpan").text("Hover 적용");
+          },
+          function () {
+            $("#testSpan").text("마우스를 올려주세요.");
+          }
+        );
+      });
+    </script>
+  </body>
+</html>

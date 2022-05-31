@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about</title>
+
+    <link rel="stylesheet" href="../assets/css/fonts.css" />
+    <link rel="stylesheet" href="../assets/css/common.css" />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <style>
+      /* about */
+      #about {
+      }
+      /* about .me .text*/
+      #about .me .text {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 20vh;
+      }
+      #about .me .text .title {
+        color: #8cffa7;
+        margin-right: 10px;
+      }
+      #about .me .text .title h2 {
+        font-size: 100px;
+      }
+      #about .me .text .int {
+        width: 40%;
+        min-width: 500px;
+      }
+      #about .me .text .int p {
+        font-size: 100%;
+        font-family: "ChosunNm";
+        line-height: 2;
+      }
+      #about .me .text .int p a {
+        display: block;
+      }
+
+      /* about .me .image*/
+      #about .me .image {
+        /* display: flex; */
+        width: 100%;
+        position: relative;
+      }
+      #about .me .image img {
+        width: 40vw;
+        height: 50vh;
+        min-width: 350px;
+        min-height: 230px;
+        object-fit: cover;
+        border: 7px solid #8cffa7;
+      }
+      #about .me .image .img01 > div {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+      }
+      #about .me .image .img02 {
+        width: 100px;
+        height: 17vw;
+      }
+      #about .me .image .img02 > div {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        bottom: -0vw;
+        z-index: -1;
+      }
+
+      #about .me .image .arrow svg path,
+      rect {
+        stroke: var(--lime);
+      }
+      #about .me .image .img01 .arrow {
+        position: relative;
+      }
+      #about .me .image .img01 .arrow svg {
+        position: absolute;
+        top: -50px;
+        right: -50px;
+      }
+
+      #about .me .image .img02 .arrow {
+        position: relative;
+      }
+      #about .me .image .img02 .arrow svg {
+        position: absolute;
+        top: -50px;
+        left: -50px;
+      }
+
+      #about .me .image .earth {
+        width: 10vw;
+        height: 10vw;
+        padding-left: 10vw;
+      }
+      #about .me .image .heart {
+        float: right;
+        width: 10vw;
+        height: 10vw;
+        margin-right: 5vw;
+      }
+      #about .me .image .heart svg {
+        width: 10vw;
+        padding-bottom: 10vw;
+      }
+
+      /* about .skill스킬 */
+      #about .skill {
+        margin-top: 20vw;
+      }
+      #about .skill .skill__inner {
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      #about .skill .chart {
+        position: relative;
+        /* min-width: 200px; */
+        width: 10vw;
+        height: 10vw;
+        border-radius: 50%;
+        margin: 10px;
+        text-align: center;
+      }
+      #about .skill .chart span {
+        text-align: center;
+        font-size: 1.9vw;
+        text-transform: uppercase;
+        line-height: 4.9;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: var(--black);
+        border-radius: 50%;
+        width: 88%;
+        height: 88%;
+      }
+
+      .scrollTop {
+        position: fixed;
+        left: 20px;
+        bottom: 20px;
+        z-index: 1000;
+        background: rgba(0, 0, 0, 0.4);
+        color: #fff;
+        padding: 10px 30px;
+        border-radius: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="scrollTop">scrollTop: <span>0</span>px</div>
+    <section id="about">
+      <div class="about__inner">
+        <div class="container">
+          <article class="me">
+            <div class="text">
+              <div class="title">
+                <h2>
+                  I AM <br />
+                  DEVELOPER
+                </h2>
+              </div>
+              <!-- //title -->
+              <div class="int">
+                <p>
+                  안녕하세요, 프론트엔드의 매력은 상상하는 것을 실현하는
+                  것이라고 생각합니다. 자기가 상상한것을 실현시키기 위해서는
+                  많은 노력과 실력이 밑바탕이 되어야 한다고 생각합니다. 그런
+                  부분에서, 저는 아직 많이 배워야하고, 훨씬 더 많은 노력을
+                  해야한다는 것을 알고 있습니다. <br />
+                  앞으로 항상 배우고 발전하는 프론트엔드 개발자가 되겠습니다.
+
+                  <a href="#" class="mt30"
+                    >Git Hub
+                    <svg
+                      style="margin-left: 5px"
+                      width="40px"
+                      height="10px"
+                      viewBox="0 0 52 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M51.3536 4.35355C51.5488 4.15829 51.5488 3.84171 51.3536 3.64645L48.1716 0.464466C47.9763 0.269204 47.6597 0.269204 47.4645 0.464466C47.2692 0.659728 47.2692 0.976311 47.4645 1.17157L50.2929 4L47.4645 6.82843C47.2692 7.02369 47.2692 7.34027 47.4645 7.53553C47.6597 7.7308 47.9763 7.7308 48.1716 7.53553L51.3536 4.35355ZM0 4.5H51V3.5H0V4.5Z"
+                        fill="var(--white)"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a href="#"
+                    >Tistory
+                    <svg
+                      style="margin-left: 10px"
+                      width="40px"
+                      height="10px"
+                      viewBox="0 0 52 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M51.3536 4.35355C51.5488 4.15829 51.5488 3.84171 51.3536 3.64645L48.1716 0.464466C47.9763 0.269204 47.6597 0.269204 47.4645 0.464466C47.2692 0.659728 47.2692 0.976311 47.4645 1.17157L50.2929 4L47.4645 6.82843C47.2692 7.02369 47.2692 7.34027 47.4645 7.53553C47.6597 7.7308 47.9763 7.7308 48.1716 7.53553L51.3536 4.35355ZM0 4.5H51V3.5H0V4.5Z"
+                        fill="var(--white)"
+                      ></path>
+                    </svg>
+                  </a>
+                </p>
+              </div>
+            </div>
+            <!-- //text -->
+
+            <div class="image">
+              <svg
+                class="earth"
+                width="50"
+                hight=""
+                viewBox="0 0 98 98"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3.14999 49.07H94.3"
+                  stroke="#88FFA4"
+                  stroke-width="5.82"
+                  stroke-miterlimit="10"
+                ></path>
+                <path
+                  d="M94.3099 49.07C94.3099 58.0849 91.6368 66.8973 86.6284 74.3929C81.62 81.8885 74.5013 87.7306 66.1727 91.1804C57.844 94.6303 48.6794 95.5329 39.8378 93.7742C30.9961 92.0155 22.8745 87.6744 16.5001 81.2999C10.1256 74.9255 5.78448 66.8039 4.02576 57.9622C2.26705 49.1206 3.16967 39.9559 6.61951 31.6273C10.0694 23.2986 15.9115 16.18 23.4071 11.1716C30.9027 6.16324 39.7151 3.49 48.73 3.49C54.7156 3.49 60.6427 4.66893 66.1727 6.95954C71.7027 9.25015 76.7274 12.6076 80.9599 16.8401C85.1924 21.0726 88.5498 26.0972 90.8404 31.6273C93.131 37.1573 94.3099 43.0844 94.3099 49.07V49.07Z"
+                  stroke="#88FFA4"
+                  stroke-width="5.82"
+                  stroke-miterlimit="10"
+                ></path>
+                <path
+                  d="M70.6 49.07C70.6 74.24 60.81 94.64 48.73 94.64C36.65 94.64 26.87 74.24 26.87 49.07C26.87 23.9 36.66 3.49 48.73 3.49C60.8 3.49 70.6 23.9 70.6 49.07Z"
+                  stroke="#88FFA4"
+                  stroke-width="5.82"
+                  stroke-miterlimit="10"
+                ></path>
+                <path
+                  d="M48.73 3.49V94.64"
+                  stroke="#88FFA4"
+                  stroke-width="5.82"
+                  stroke-miterlimit="10"
+                ></path>
+                <path
+                  d="M94.31 49.07C94.31 60.59 73.9 69.94 48.73 69.94C23.56 69.94 3.16 60.59 3.16 49.07C3.16 37.55 23.56 28.19 48.73 28.19C73.9 28.19 94.31 37.54 94.31 49.07Z"
+                  stroke="#88FFA4"
+                  stroke-width="5.82"
+                  stroke-miterlimit="10"
+                ></path>
+              </svg>
+              <!-- //svg:earth -->
+
+              <div class="img01">
+                <div>
+                  <div class="arrow">
+                    <svg
+                      width="90"
+                      height="90"
+                      viewBox="0 0 90 90"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="2"
+                        y="2.09796"
+                        width="85.8227"
+                        height="85.8227"
+                        fill="black"
+                        stroke="#FFFF31"
+                        stroke-width="4"
+                      />
+                      <path
+                        d="M20.5989 70.7445L69.35 21.9934"
+                        stroke="#FFFF31"
+                        stroke-width="4"
+                        stroke-miterlimit="10"
+                      />
+                      <path
+                        d="M33.1054 21.3754L70.9137 20.4328L69.9711 58.2411"
+                        stroke="#FFFF31"
+                        stroke-width="4"
+                        stroke-miterlimit="10"
+                      />
+                    </svg>
+                  </div>
+                  <img src="assets/img/me_face.png" alt="얼굴샷" />
+                </div>
+              </div>
+
+              <div class="img02 clearfix">
+                <div>
+                  <div class="arrow">
+                    <svg
+                      width="90"
+                      height="90"
+                      viewBox="0 0 90 90"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="2"
+                        y="2.09796"
+                        width="85.8227"
+                        height="85.8227"
+                        fill="black"
+                        stroke="#FFFF31"
+                        stroke-width="4"
+                      />
+                      <path
+                        d="M20.5989 70.7445L69.35 21.9934"
+                        stroke="#FFFF31"
+                        stroke-width="4"
+                        stroke-miterlimit="10"
+                      />
+                      <path
+                        d="M33.1054 21.3754L70.9137 20.4328L69.9711 58.2411"
+                        stroke="#FFFF31"
+                        stroke-width="4"
+                        stroke-miterlimit="10"
+                      />
+                    </svg>
+                  </div>
+                  <img src="assets/img/me_body.png" alt="전신샷" />
+                </div>
+              </div>
+              <div class="heart">
+                <svg
+                  viewBox="0 0 99 93"
+                  fill="var(--black)"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="var(--black)"
+                    d="M49.3 27.75C49.25 -0.810013 3.39999 -7.93001 3.44999 28.75C3.49999 65.43 48.4 89.87 48.4 89.87H50.4C50.4 89.87 95.21 65.33 95.16 28.61C95.11 -8.11003 49.25 -0.810013 49.3 27.75Z"
+                    stroke="#88FFA4"
+                    stroke-width="5.82"
+                    stroke-miterlimit="10"
+                  ></path>
+                </svg>
+              </div>
+              <!-- //heart -->
+            </div>
+            <!-- //image -->
+          </article>
+          <!-- //me -->
+
+          <article class="skill">
+            <div class="skill__inner">
+              <div class="chart chart1">
+                <span class="chart_cen">html</span>
+              </div>
+              <div class="chart chart2"><span class="chart_cen">CSS</span></div>
+              <div class="chart chart3"><span class="chart_cen">vue</span></div>
+              <div class="chart chart4">
+                <span class="chart_cen">react</span>
+              </div>
+              <div class="chart chart5"><span class="chart_cen">js</span></div>
+              <div class="chart chart6"><span class="chart_cen">php</span></div>
+            </div>
+          </article>
+          <!-- //skill -->
+        </div>
+      </div>
+      <!-- //about__inner -->
+    </section>
+
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      window.addEventListener("scroll", () => {
+        let scrollTop =
+          window.pageYOffset ||
+          document.documentElement.scrollTop ||
+          window.scrollY;
+
+        //info
+        document.querySelector(".scrollTop span").innerText =
+          Math.round(scrollTop);
+      });
+
+      $(".skill").scroll(function () {
+        $(window).ready(function () {
+          draw(90, ".chart1", "#8cffa7");
+          draw(85, ".chart2", "#8cffa7");
+          draw(72, ".chart3", "#8cffa7");
+          draw(69, ".chart4", "#8cffa7");
+          draw(80, ".chart5", "#8cffa7");
+          draw(73, ".chart6", "#8cffa7");
+        });
+      });
+
+      function draw(max, classname, colorname) {
+        var i = 1;
+        var func1 = setInterval(function () {
+          if (i < max) {
+            color1(i, classname, colorname);
+            i++;
+          } else {
+            clearInterval(func1);
+          }
+        }, 10);
+      }
+      function color1(i, classname, colorname) {
+        $(classname).css({
+          background:
+            "conic-gradient(" +
+            colorname +
+            " 0% " +
+            i +
+            "%, #000 " +
+            i +
+            "% 100%)",
+        });
+      }
+    </script>
+  </body>
+</html>

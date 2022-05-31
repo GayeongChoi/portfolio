@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="locomotive-scroll.css" />
+
+    <style>
+      div[data-scroll-section] {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* section color */
+      div[data-scroll-section]:first-child {
+        background: #ececec;
+      }
+      div[data-scroll-section]:nth-child(2) {
+        background: #acd3f5;
+      }
+    </style>
+  </head>
+  <div data-scroll-container>
+    <div data-scroll-section>
+      <h1 data-scroll-position="right">Hey</h1>
+      <p data-scroll>👋</p>
+    </div>
+    <div data-scroll-section>
+      <h2 data-scroll data-scroll-speed="-5">What's up?</h2>
+      <p data-scroll data-scroll-speed="5">😬</p>
+    </div>
+  </div>
+
+  <script src="locomotive-scroll.min.js"></script>
+  <script>
+    const scroll = new LocomotiveScroll({
+      el: document.querySelector("[data-scroll-container]"),
+      smooth: true,
+    });
+  </script>
+</html>

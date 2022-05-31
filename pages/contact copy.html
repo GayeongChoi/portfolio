@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../assets/css/fonts.css" />
+    <link rel="stylesheet" href="../assets/css/common.css" />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <style>
+      #contact {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+      }
+      #contact .container {
+        margin: 0 auto;
+        padding: 0% 2vw;
+        display: grid;
+        grid-template-columns: repeat(11, 1fr);
+      }
+      #contact .container:nth-child(1) {
+        grid-template-rows: repeat(10, minmax(50px, auto));
+      }
+      #contact > .container:nth-child(2) {
+        grid-template-rows: repeat(2, minmax(50px, auto));
+      }
+      #contact .title__txt {
+        grid-column: 2/7;
+        grid-row: 2;
+      }
+      #contact .title {
+      }
+      #contact .emailBox {
+      }
+      #contact .nameBox {
+      }
+      #contact .textBox {
+      }
+      #contact .btn {
+      }
+      #contact .logo {
+      }
+      #contact .myEmail {
+      }
+      #contact .follow {
+      }
+      #contact .more {
+      }
+      #contact .copyright {
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="contact">
+      <div class="container"></div>
+
+      <hr />
+
+      <div class="container">
+        <div class="logo"></div>
+        <div class="myEmail">
+          <h4>my email</h4>
+          <p title="wwuu123@naver.com">wwuu123@naver.com</p>
+        </div>
+        <div class="follow">
+          <h4>follow us</h4>
+          <div class="icons">
+            <a class="github" href="https://github.com/GayeongChoi"></a>
+            <a class="tistory" href="https://webs-blog.tistory.com/"></a>
+            <a class="discord" href=""></a>
+          </div>
+        </div>
+        <div class="more">
+          <h4>more</h4>
+          <a href="https://gayeongchoi.github.io/webs_class/"
+            >https://gayeongchoi.github.io/webs_class/</a
+          >
+        </div>
+        <div class="copyright">©2022 GAYEONGCHOI. All rights reserved.</div>
+      </div>
+    </div>
+  </body>
+</html>
