@@ -694,7 +694,7 @@ path {
 #contact .title {
   /* align-self: center; */
   justify-self: start;
-  font-size: 5vw;
+  font-size: 4.5vw;
   color: var(--yellow);
 }
 #contact .title__txt {

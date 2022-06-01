@@ -22,7 +22,7 @@
   </head>
   <body>
     <div data-scroll-container id="wrap">
-      <section data-scroll-section id="home">
+      <section id="home" data-scroll-section >
         <div class="sec1_text">
           <div>Welcome</div>
           <div>DEV frontEND</div>
@@ -30,7 +30,7 @@
         <canvas id="webgl-canvas"></canvas>
       </section>
 
-      <section data-scroll-section id="about">
+      <section id="about" data-scroll-section >
         <div class="about__inner">
           <div class="container">
             <article class="me">
@@ -45,7 +45,7 @@
                 <span class="int">
                   <p>
                     안녕하세요, 개발의 매력은 상상하는 것을 실현하는 것이라고
-                    생각합니다. <br />
+                    생각합니다. <br>
                     자기가 상상한것을 실현시키기 위해서는 많은 노력과 실력이
                     밑바탕이 되어야 한다고 생각합니다. 그런 부분에서, 저는 아직
                     많이 배워야하고, 훨씬 더 많은 노력을 해야한다는 것을 알고
@@ -110,7 +110,8 @@
 
               <div class="image">
                 <div class="img01">
-                  <svg
+                  <div data-scroll="" data-scroll-direction="horizontal" data-scroll-speed="-3">
+                    <svg 
                     class="earth mr100"
                     width="115"
                     height="115"
@@ -153,8 +154,10 @@
                       stroke-miterlimit="10"
                     ></path>
                   </svg>
+                  </div>
+                  
                   <!-- //svg:earth -->
-                  <div data-scroll=""  data-scroll-direction="horizontal" data-scroll-speed="2">
+                  <div data-scroll  data-scroll-direction="horizontal" data-scroll-speed="2">
                     <div class="arrow">
                       <svg
                         width="90"
@@ -191,7 +194,7 @@
                 </div>
 
                 <div class="img02 clearfix">
-                  <div data-scroll=""  data-scroll-direction="horizontal" data-scroll-speed="-2">
+                  <div data-scroll=""  data-scroll-direction="horizontal" data-scroll-speed="-6">
                     <div class="arrow">
                       <svg
                         width="90"
@@ -225,7 +228,7 @@
                     </div>
                     <img  src="assets/img/me_body.png" alt="전신샷" />
                   </div>
-                  <div class="svg heart">
+                  <div class="svg heart" data-scroll  data-scroll-speed="-1" >
                     <svg
                       viewBox="0 0 99 93"
                       fill="var(--black)"
@@ -254,11 +257,28 @@
 
       <section id="work" data-scroll-section data-scroll-section-inview>
         <div class="work__inner">
-          <header class="header">I MADE SITE</header>
+          <header class="header">
+            <div
+              data-scroll
+              data-scroll-direction="horizontal" 
+              data-scroll-speed="10"
+              data-scroll-repeat="true"
+            > I MADE SITE
+            </div>
+          </header>
           <!-- //header -->
           <div class="container">
-            <div class="workType01 w_grid" data-scroll data-scroll-speed="3" data-scroll-direction="vertical">
-              <div class="work__img">
+            <div class="workType01 w_grid"
+              data-scroll=""
+              data-scroll-speed="-5"
+              data-scroll-direction="horizontal"
+             >
+              <div 
+                class="work__img"
+                data-scroll=""
+                data-scroll-speed="1"
+                data-scroll-direction="horizontal"
+              >
                 <div class="bar">WESTENDARD SITE</div>
                 <img
                   src="./assets/img/work_westensard.png"
@@ -267,7 +287,12 @@
               </div>
               <!-- //workType01 work__img -->
 
-              <p class="work__text">
+              <p 
+                class="work__text"
+                data-scroll=""
+                data-scroll-speed="-2"
+                data-scroll-direction="horizontal"
+              >
                 웹 표준 지침서를 준수하고 크로스브라우징 작업을 한 사이트입
                 니다. 모든 사용자가 이용에 불편이 없도록 대체 텍스트로 웹 접
                 근성 또한 고려하였습니다. 슬라이드, 탭, 메뉴, 팝업, 동영상 기
@@ -400,7 +425,12 @@
             </div>
             <!-- //workType01 -->
 
-            <div class="workType02 w_grid" data-scroll data-scroll-speed="5" data-scroll-direction="vertical">
+
+            <div class="workType02 w_grid" 
+                data-scroll=""
+                data-scroll-speed="5"
+                data-scroll-direction="horizontal"
+            >
               <div class="work__img">
                 <div class="bar">PHP SITE</div>
                 <img src="./assets/img/work_PHP.png" alt="PHP site이미지" />
@@ -512,7 +542,11 @@
             </div>
             <!-- //workType02 -->
 
-            <div class="workType01 w_grid" data-scroll data-scroll-speed="7" data-scroll-direction="vertical">
+            <div class="workType01 w_grid" 
+              data-scroll=""
+              data-scroll-speed="-5"
+              data-scroll-direction="horizontal"
+            >
               <div class="work__img">
                 <div class="bar">react SITE</div>
                 <img
@@ -656,7 +690,11 @@
             </div>
             <!-- //workType01 react-->
 
-            <div class="workType02 w_grid" data-scroll data-scroll-speed="2" data-scroll-direction="vertical">
+            <div class="workType02 w_grid"  
+              data-scroll=""
+              data-scroll-speed="5"
+              data-scroll-direction="horizontal"
+            >
               <div class="work__img">
                 <div class="bar">project SITE</div>
                 <img
@@ -780,7 +818,13 @@
 
       <section data-scroll-section id="scrip">
         <div class="cursor"></div>
-        <header class="header">look at script</header>
+        <header class="header">
+          <div
+          data-scroll
+          data-scroll-direction="horizontal" 
+          data-scroll-speed="-30"
+          data-scroll-repeat="true"
+          > look at script</div></header>
         <!-- //header -->
 
         <div class="scrip__inner">
@@ -834,10 +878,10 @@
                 음악 플레이어를 구현하였습니다. <br />
                 음악 재생하기, 이전곡, 다음 곡 재생과 반복 듣기, 한번 반복, 그에
                 따라 아이콘 변경하기 곡이 끝나면 다음 곡 재생하기와 뮤직 리스트
-                펼치기 , <br />
+                펼치기 , 
                 리스트를 클릭하면 해당 곡 재생하기와 재생곡 시간에 따라 움직이는
                 바와 재생 시간 표기, 재생바를 누르면 해당 지점 음악이
-                재생되도록하고 곡을 재생하면 <br />
+                재생되도록하고 곡을 재생하면 
                 변경되는 이미지나 오디오명도 변경되어 출력되도록 하였습니다.
               </div>
             </div>
@@ -895,10 +939,10 @@
               <div class="scrip__text">
                 카드 암기 게임을 만들었습니다. <br />
                 몇 초 동안 카드 안의 그림을 보여주고 다시 카드를 뒤집어서 뒤집힌
-                카드의 짝을 이루는 그림을 맞추는 게임입니다. <br />
+                카드의 짝을 이루는 그림을 맞추는 게임입니다.
                 스타트 버튼을 누르면 게임 규칙과 설명이 나옵니다. 게임을 플레이
                 하시고 나시면 합산 점수와 연속으로 맞춘 갯수 등이 스코어가
-                나타납니다. <br />
+                나타납니다.
                 그 외 틀리면 이미지가 흔들리고 카드 뒤집는 도중에 다른 카드가
                 뒤집히지 않도록 또 맞춘 카드들은 뒤집히지 않게 하도록
                 구현하였습니다.
@@ -958,7 +1002,7 @@
               <div class="scrip__text">
                 영문 타이핑 연습을 할 수 있는 게임입니다. <br />
                 입력칸에 예제에 맞춰 타이핑하면 타이머가 움직이기 시작하면서
-                글자가 파란색으로 변합니다 틀리면 빨간색으로 표기 됩니다. <br />
+                글자가 파란색으로 변합니다 틀리면 빨간색으로 표기 됩니다.
                 1분동안한 타이핑 실수와 맞은 갯수등의 스코어가 하단에 표시
                 됩니다 1분 동안 얼마나 타이핑 할 수 있는 지 확인해보세요!
               </div>
@@ -1018,9 +1062,9 @@
                 테트리스 게임입니다. 특정 모양의 블록을 쌓아올리는 게임입니다.
                 <br />
                 특정 모양의 블록을 쌓아올려서 한줄을 완성하면 사라지고 블록을
-                천장까지 닿지 않게 하고 최대한 점수를 내야합니다. <br />블록은
+                천장까지 닿지 않게 하고 최대한 점수를 내야합니다. 블록은
                 css로 구현하고 블록 교체와 내려오는 애니메이션, 블록을 쌓아올릴
-                수 있도록 바닥에 닿으면 블록이 사라지않고 쌓인 블록 위에 <br />
+                수 있도록 바닥에 닿으면 블록이 사라지않고 쌓인 블록 위에 
                 블록을 쌓을 수 있고 천장까지 닿으면 더 이상 블록이 내려오면
                 게임오버 되도록 하였습니다.
               </div>
@@ -1033,7 +1077,13 @@
       </section>
 
       <section data-scroll-section id="effect">
-        <header class="header">LET’s see the effect</header>
+        <header class="header">
+          <div
+          data-scroll
+          data-scroll-direction="horizontal" 
+          data-scroll-speed="30"
+          data-scroll-repeat="true"
+          > LET’s see the effect</div></header>
         <!-- //header -->
         <div class="container">
           <div class="effType seach">
@@ -1493,6 +1543,7 @@
       const scroller = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
         smooth: true,
+        repeat:true
       });
     </script>
     <!-- //locomotive-scroll -->
