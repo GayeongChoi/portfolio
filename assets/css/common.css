@@ -63,6 +63,11 @@ body {
   font-size: 6vw;
   font-weight: 700;
 }
+.header > div {
+  background: linear-gradient(to right, #8cffa7, #e1ff31, var(--green) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 /* svg 크기 */
 .arrow {
