@@ -278,7 +278,8 @@
   line-height: 1.5;
   background-color: var(--black);
 }
-#work .svg {
+#work .earth,
+#work .heart {
   align-self: center;
   justify-self: center;
   width: 130px;
@@ -318,10 +319,10 @@
 .workType01 .earth {
   grid-column: 5/7;
   grid-row: 5/7;
-  width: 130px;
-  height: 130px;
+  align-self: center;
+  justify-self: center;
 }
-.workType01 .earth > path {
+.workType01 .earth path {
   stroke-width: 3px;
 }
 .workType01 > .code.view {
@@ -370,6 +371,8 @@
   grid-column: 6/8;
   grid-row: 5/7;
   margin-right: 50px;
+}
+.workType02 .heart .svg {
   transform: rotate(-15deg);
   width: 90px;
   height: 90px;
@@ -493,9 +496,6 @@ path {
 }
 
 /* script */
-.scrip__inner {
-  margin: 30vh auto;
-}
 .scripType {
   width: 100vw;
   color: var(--lime);
@@ -526,6 +526,7 @@ path {
   font-size: 30px;
   margin: 5% 5px 0 0;
   color: var(--lime);
+  padding-right: 8px;
 }
 .scripType a:hover,
 .scripType .siteView p:hover {
@@ -547,6 +548,9 @@ path {
   font-family: var(--subFont);
   font-size: 20px;
   line-height: 1.5;
+}
+.scripType.music {
+  margin-top: 30vh;
 }
 @media (max-width: 1300px) {
   .scripType .scrip__title {
@@ -578,14 +582,14 @@ path {
   position: relative;
   margin: 2% 0;
   border-style: solid;
-  background: var(--lime);
+  /* background: var(--lime); */
 }
 .effType svg {
   position: absolute;
   top: -30px;
-  right: -20px;
+  right: -30px;
   width: 5vw;
-  transform: rotate(15deg);
+  /* transform: rotate(15deg); */
 }
 .effType svg > path {
   stroke-width: 5;
@@ -608,7 +612,6 @@ path {
 }
 .effType img {
   width: 100%;
-  transform: scale(0.99);
   overflow: hidden;
 }
 .effType img:hover {
@@ -632,7 +635,7 @@ path {
 .effType.yellow .bar,
 .effType.yellow svg > rect,
 .effType.yellow svg > path {
-  background: var(--yellow);
+  /* background: var(--yellow); */
   border-color: var(--yellow);
   stroke: var(--yellow);
 }
