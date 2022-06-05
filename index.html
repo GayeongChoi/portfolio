@@ -18,9 +18,28 @@
         left: 0;
         top: 0;
       }
+      .progress {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 100vh;
+    background: var(--black);
+  }  
+  .progress .progress-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 4vw;
+    color: var(--lime);
+  }
     </style>
   </head>
   <body>
+    <!-- <div class="progress"><span class="progress-text">0</span></div> -->
     <div data-scroll-container id="wrap">
       <section id="home" data-scroll-section >
         <div class="sec1_text">
@@ -116,14 +135,14 @@
 
               <div class="image">
                 <div class="img01">
-                  <div data-scroll="" data-scroll-direction="horizontal" data-scroll-speed="-3">
+                  <div>
                     <svg 
-                    class="earth mr100"
-                    width="115"
-                    height="115"
-                    viewBox="0 0 98 98"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+                      class="earth mr100"
+                      width="115"
+                      height="115"
+                      viewBox="0 0 98 98"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
                       d="M94.3099 49.07C94.3099 58.0849 91.6368 66.8973 86.6284 74.3929C81.62 81.8885 74.5013 87.7306 66.1727 91.1804C57.844 94.6303 48.6794 95.5329 39.8378 93.7742C30.9961 92.0155 22.8745 87.6744 16.5001 81.2999C10.1256 74.9255 5.78448 66.8039 4.02576 57.9622C2.26705 49.1206 3.16967 39.9559 6.61951 31.6273C10.0694 23.2986 15.9115 16.18 23.4071 11.1716C30.9027 6.16324 39.7151 3.49 48.73 3.49C54.7156 3.49 60.6427 4.66893 66.1727 6.95954C71.7027 9.25015 76.7274 12.6076 80.9599 16.8401C85.1924 21.0726 88.5498 26.0972 90.8404 31.6273C93.131 37.1573 94.3099 43.0844 94.3099 49.07V49.07Z"
@@ -161,9 +180,8 @@
                     ></path>
                   </svg>
                   </div>
-                  
                   <!-- //svg:earth -->
-                  <div data-scroll  data-scroll-direction="horizontal" data-scroll-speed="2">
+                  <div data-scroll   data-scroll-speed="10">
                     <div class="arrow">
                       <svg
                         width="90"
@@ -200,7 +218,7 @@
                 </div>
 
                 <div class="img02 clearfix">
-                  <div data-scroll=""  data-scroll-direction="horizontal" data-scroll-speed="-6">
+                  <div data-scroll=""  data-scroll-direction="horizontal" data-scroll-speed="3">
                     <div class="arrow">
                       <svg
                         width="90"
@@ -1608,18 +1626,75 @@
     <span class="c-scrollbar_thumb" style="width: 384px; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 336.189, 0, 0, 1);"></span>
 
     <!-- script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- 3D효과 무조건 맨앞에 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="locomotive-scroll.min.js"></script>
+    
+
     <script>
+      //loading
+      function loading() {
+            console.log('loading')
+            let progress = $(".progress"),
+                progressText = progress.find(".progress-text"),
+                imgLoad = imagesLoaded("body"),
+                imgTotal = imgLoad.images.length,
+                imgLoaded = 0,
+                imgCurrent = 0,
+                progressTimer = setInterval(updateProgress, 1000 / 60);              
+            imgLoad.on("progress", function () {
+                imgLoaded++;
+            });
+
+            function updateProgress() {
+                let target = (imgLoaded / imgTotal) * 100;
+
+                imgCurrent += (target - imgCurrent) * 0.1;
+                progressText.text(Math.floor(imgCurrent) + "%");
+
+                if (imgCurrent >= 100) {
+                    clearInterval(progressTimer);
+                    progress.delay(1000).animate({
+                        top: "-130%"
+                    }, 400);
+
+                    $("body").addClass("show");                                        
+                }
+
+                if (imgCurrent > 99) {
+                    imgCurrent = 100;
+                    
+                }
+            }
+            $(".sec1_text div").fadeOut();
+        }
+        loading();
+
+      //locomotive-scroll
       const scroller = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
         smooth: true,
         repeat:true
       });
+
+      // function homeView() {
+      //   $(".sec1_text div").fadeOut();
+      // }
+      // homeView();
+     
+      //home
+      setTimeout(function() {
+        console.log("logo")
+        $(".sec1_text div").slideDown();
+      }, 2500);
+
+
+
     </script>
-    <!-- //locomotive-scroll -->
     
     <!-- home -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script id="js-vertex-shader" type="x-shader/x-vertex">
       uniform float time;
       varying vec3 vPosition;
