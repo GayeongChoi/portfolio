@@ -51,9 +51,10 @@
   color: #8cffa7;
   margin-right: 10px;
 }
-#about .me .text .title h1 {
+#about .me .text .title div {
   width: 100%;
   font-size: 90px;
+  font-weight: 700;
 }
 #about .me .text .int {
   width: 45%;
@@ -280,10 +281,10 @@
 }
 #work .earth,
 #work .heart {
-  align-self: center;
-  justify-self: center;
   width: 130px;
   height: 130px;
+  align-self: center;
+  justify-self: start;
 }
 #work .view {
   align-self: center;
@@ -317,10 +318,8 @@
   padding: 2%;
 }
 .workType01 .earth {
-  grid-column: 5/7;
+  grid-column: 6/9;
   grid-row: 5/7;
-  align-self: center;
-  justify-self: center;
 }
 .workType01 .earth path {
   stroke-width: 3px;
@@ -359,16 +358,16 @@
   stroke: var(--lime);
 }
 .workType02 > .work__img {
-  grid-column: 3 / 11;
+  grid-column: 3/11;
   grid-row: 1/5;
 }
 .workType02 > .work__text {
-  grid-column: 7 / 12;
-  grid-row: 4/6;
+  grid-column: 7/12;
+  grid-row: 4 /6;
   padding: 2% 2% 2% 35px;
 }
 .workType02 .heart {
-  grid-column: 6/8;
+  grid-column: 6/9;
   grid-row: 5/7;
   margin-right: 50px;
 }
@@ -573,16 +572,25 @@ path {
 /* effect */
 #effect > .container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  margin: 30vh 0 0 0vw;
+  max-width: 100vw;
+}
+#effect .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#effect .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 /* effType */
 .effType {
-  width: 49%;
+  width: 80%;
   position: relative;
-  margin: 2% 0;
   border-style: solid;
-  /* background: var(--lime); */
+  margin-bottom: 25%;
 }
 .effType svg {
   position: absolute;
@@ -611,11 +619,13 @@ path {
   height: 105%;
 }
 .effType img {
+  position: relative;
+  z-index: -1;
   width: 100%;
   overflow: hidden;
 }
 .effType img:hover {
-  transform: scale(1);
+  transform: scale(2);
 }
 /* effType border */
 .effType,
@@ -796,16 +806,6 @@ path {
 }
 #contact .footer.follow .icon {
 }
-/* #contact .footer.more {
-  grid-column: 8/12;
-  font-size: 1vw;
-} 
-#contact .copyright {
-  grid-column: 1/11;
-  grid-row: 4;
-  align-self: end;
-  justify-self: center;
-} */
 .icon.discord {
   cursor: pointer;
 }

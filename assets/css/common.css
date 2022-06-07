@@ -69,7 +69,7 @@ body {
   height: 20vw;
   background-image: linear-gradient(
     to right,
-    rgba(0, 0, 0, 0.8) 0%,
+    rgba(28, 29, 28, 0.852) 0%,
     rgba(116, 214, 139, 0.7),
     var(--green) 100%
   );
@@ -83,7 +83,7 @@ body {
 .header > div {
   background: linear-gradient(
     to right,
-    #8cffa7,
+    rgba(116, 214, 139),
     #e1ff31,
     var(--green) 100%
   );

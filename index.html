@@ -18,9 +18,29 @@
         left: 0;
         top: 0;
       }
+      .progress {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 100vh;
+    background: var(--black);
+  }  
+  .progress .progress-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 4vw;
+    color: var(--lime);
+  }
     </style>
   </head>
   <body>
+    <div class="progress"><span class="progress-text">0</span></div>
+    <!-- //loading -->
     <div data-scroll-container id="wrap">
       <section id="home" data-scroll-section >
         <div class="sec1_text">
@@ -36,18 +56,18 @@
             <article class="me">
               <div class="text">
                 <span class="title">
-                  <h1 
+                  <div 
                   data-scroll
-                  data-scroll-speed="1"
+                  data-scroll-speed="-2"
                   >
                     I AM <br />
                     DEVELOPER
-                  </h1>
+                  </div>
                 </span>
                 <!-- //title -->
                 <div class="int"
                 data-scroll
-                data-scroll-speed="2"
+                data-scroll-speed="-5"
                 >
                   <p>
                     안녕하세요, 개발의 매력은 상상하는 것을 실현하는 것이라고
@@ -116,14 +136,18 @@
 
               <div class="image">
                 <div class="img01">
-                  <div data-scroll="" data-scroll-direction="horizontal" data-scroll-speed="-3">
+                  <div 
+                  data-scroll="" 
+                  data-scroll-direction="horizontal" 
+                  data-scroll-speed="-3"
+                  >
                     <svg 
-                    class="earth mr100"
-                    width="115"
-                    height="115"
-                    viewBox="0 0 98 98"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+                      class="earth mr100"
+                      width="115"
+                      height="115"
+                      viewBox="0 0 98 98"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
                       d="M94.3099 49.07C94.3099 58.0849 91.6368 66.8973 86.6284 74.3929C81.62 81.8885 74.5013 87.7306 66.1727 91.1804C57.844 94.6303 48.6794 95.5329 39.8378 93.7742C30.9961 92.0155 22.8745 87.6744 16.5001 81.2999C10.1256 74.9255 5.78448 66.8039 4.02576 57.9622C2.26705 49.1206 3.16967 39.9559 6.61951 31.6273C10.0694 23.2986 15.9115 16.18 23.4071 11.1716C30.9027 6.16324 39.7151 3.49 48.73 3.49C54.7156 3.49 60.6427 4.66893 66.1727 6.95954C71.7027 9.25015 76.7274 12.6076 80.9599 16.8401C85.1924 21.0726 88.5498 26.0972 90.8404 31.6273C93.131 37.1573 94.3099 43.0844 94.3099 49.07V49.07Z"
@@ -163,7 +187,11 @@
                   </div>
                   
                   <!-- //svg:earth -->
-                  <div data-scroll  data-scroll-direction="horizontal" data-scroll-speed="2">
+                  <div 
+                  data-scroll  
+                  data-scroll-direction="horizontal" 
+                  data-scroll-speed="3"
+                  >
                     <div class="arrow">
                       <svg
                         width="90"
@@ -200,7 +228,11 @@
                 </div>
 
                 <div class="img02 clearfix">
-                  <div data-scroll=""  data-scroll-direction="horizontal" data-scroll-speed="-6">
+                  <div 
+                  data-scroll=""  
+                  data-scroll-direction="horizontal" 
+                  data-scroll-speed="-3"
+                  >
                     <div class="arrow">
                       <svg
                         width="90"
@@ -234,7 +266,11 @@
                     </div>
                     <img  src="assets/img/me_body.png" alt="전신샷" />
                   </div>
-                  <div class="svg heart" data-scroll  data-scroll-speed="-1" >
+                 
+                  <div class="svg heart" 
+                  data-scroll  
+                  data-scroll-speed="-2" 
+                  >
                     <svg
                       viewBox="0 0 99 93"
                       fill="var(--black)"
@@ -267,7 +303,7 @@
             <div
               data-scroll
               data-scroll-direction="horizontal" 
-              data-scroll-speed="10"
+              data-scroll-speed="1"
               data-scroll-repeat="true"
             > I MADE SITE
             </div>
@@ -296,7 +332,7 @@
               <div 
                 class="work__text"
                 data-scroll=""
-                data-scroll-speed="-2"
+                data-scroll-speed="-1"
                 data-scroll-direction="horizontal"
               >
                 웹 표준 지침서를 준수하고 크로스브라우징 작업을 한 사이트입
@@ -309,7 +345,7 @@
 
               <div class="earth"
                 data-scroll=""
-                data-scroll-speed="-5"
+                data-scroll-speed="-3"
                 data-scroll-direction="horizontal"
               >
                 <svg
@@ -396,7 +432,11 @@
               </div>
               <!-- //workType01 code view -->
 
-              <div class="site view">
+              <div class="site view"
+                data-scroll=""
+                data-scroll-speed="-1"
+                data-scroll-direction="horizontal"
+              >
                 <a
                   href="https://gayeongchoi.github.io/webs_class/webstandard/index.html"
                 >
@@ -438,7 +478,6 @@
             </div>
             <!-- //workType01 -->
 
-
             <div class="workType02 w_grid" 
                 data-scroll=""
                 data-scroll-speed="5"
@@ -473,19 +512,19 @@
                 data-scroll-direction="horizontal"
               >
                 <svg
-                class="svg"
-                viewBox="0 0 100 100"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M49.9949 29.2819C49.9436 -1.85186 2.94879 -9.6135 3.00004 30.372C3.05129 70.3575 49.0724 97 49.0724 97H51.1223C51.1223 97 97.0512 70.2485 97 30.2194C96.9487 -9.80974 49.9436 -1.85186 49.9949 29.2819Z"
-                  fill="black"
-                  stroke="#88FFA4"
-                  stroke-width="5"
-                  stroke-miterlimit="10"
-                />
-              </svg>
+                  class="svg"
+                  viewBox="0 0 100 100"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M49.9949 29.2819C49.9436 -1.85186 2.94879 -9.6135 3.00004 30.372C3.05129 70.3575 49.0724 97 49.0724 97H51.1223C51.1223 97 97.0512 70.2485 97 30.2194C96.9487 -9.80974 49.9436 -1.85186 49.9949 29.2819Z"
+                    fill="black"
+                    stroke="#88FFA4"
+                    stroke-width="5"
+                    stroke-miterlimit="10"
+                  />
+                </svg>
               </div>
               <!-- //workType02 heart -->
 
@@ -528,7 +567,11 @@
                 </a>
               </div>
               <!-- //workType02 code view -->
-              <div class="site view">
+              <div class="site view"
+                data-scroll=""
+                data-scroll-speed="1"
+                data-scroll-direction="horizontal"
+              >
                 <a href="http://wwuu12366.dothome.co.kr/php/pages/main.php">
                   <svg
                     class="arrow"
@@ -583,7 +626,11 @@
               </div>
               <!-- //workType01 work__img -->
 
-              <p class="work__text">
+              <p class="work__text"
+                data-scroll=""
+                data-scroll-speed="-2"
+                data-scroll-direction="horizontal"
+              >
                 리액트로 만든 포트폴리오 사이트입니다. 컴포넌트를 활용하여
                 사이트를 완성하였고, SCSS를 사용하여 스타일을 지정했습니다.
                 포트폴리오와 레퍼런스 페이지는 작성한 json 파일의 정보를
@@ -593,46 +640,53 @@
                 사이트의 검색정보도 볼 수 있도록 기능을 구현해놓았습니다.
               </p>
 
-              <svg
-                class="svg earth"
-                width="100"
-                height="100"
-                viewBox="0 0 100 100"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+              <div class="earth"
+                data-scroll=""
+                data-scroll-speed="-3"
+                data-scroll-direction="horizontal"
               >
-                <path
-                  d="M97 50C97 59.2957 94.2436 68.3827 89.0792 76.1118C83.9148 83.8409 76.5743 89.865 67.9862 93.4223C59.398 96.9797 49.9479 97.9104 40.8309 96.0969C31.7137 94.2834 23.3391 89.8071 16.7661 83.234C10.193 76.661 5.71663 68.2864 3.90311 59.1692C2.08961 50.0522 3.02035 40.6019 6.57767 32.0139C10.135 23.4257 16.1591 16.0853 23.8883 10.9209C31.6174 5.75652 40.7043 3 50.0001 3C56.1722 3 62.2839 4.21566 67.9862 6.57763C73.6885 8.9396 78.8697 12.4016 83.2341 16.766C87.5985 21.1304 91.0604 26.3115 93.4224 32.0139C95.7844 37.7162 97 43.8279 97 50Z"
-                  fill="black"
-                  stroke="#FFFF31"
-                  stroke-width="5"
-                  stroke-miterlimit="10"
-                />
-                <path
-                  d="M72.5511 50C72.5511 75.9542 62.4561 96.9897 49.9998 96.9897C37.5434 96.9897 27.4587 75.9542 27.4587 50C27.4587 24.0459 37.5537 3 49.9998 3C62.4458 3 72.5511 24.0459 72.5511 50Z"
-                  stroke="#FFFF31"
-                  stroke-width="5"
-                  stroke-miterlimit="10"
-                />
-                <path
-                  d="M97 50.0001C97 61.8789 75.9541 71.5202 50 71.5202C24.0458 71.5202 3.01025 61.8789 3.01025 50.0001C3.01025 38.1212 24.0458 28.4696 50 28.4696C75.9541 28.4696 97 38.1109 97 50.0001Z"
-                  stroke="#FFFF31"
-                  stroke-width="5"
-                  stroke-miterlimit="10"
-                />
-                <path
-                  d="M50 3V96.9897"
-                  stroke="#FFFF31"
-                  stroke-width="5"
-                  stroke-miterlimit="10"
-                />
-                <path
-                  d="M3 50.0002H96.9897"
-                  stroke="#FFFF31"
-                  stroke-width="5"
-                  stroke-miterlimit="10"
-                />
-              </svg>
+                <svg
+                  class="svg"
+                  width="100"
+                  height="100"
+                  viewBox="0 0 100 100"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M97 50C97 59.2957 94.2436 68.3827 89.0792 76.1118C83.9148 83.8409 76.5743 89.865 67.9862 93.4223C59.398 96.9797 49.9479 97.9104 40.8309 96.0969C31.7137 94.2834 23.3391 89.8071 16.7661 83.234C10.193 76.661 5.71663 68.2864 3.90311 59.1692C2.08961 50.0522 3.02035 40.6019 6.57767 32.0139C10.135 23.4257 16.1591 16.0853 23.8883 10.9209C31.6174 5.75652 40.7043 3 50.0001 3C56.1722 3 62.2839 4.21566 67.9862 6.57763C73.6885 8.9396 78.8697 12.4016 83.2341 16.766C87.5985 21.1304 91.0604 26.3115 93.4224 32.0139C95.7844 37.7162 97 43.8279 97 50Z"
+                    fill="black"
+                    stroke="#FFFF31"
+                    stroke-width="5"
+                    stroke-miterlimit="10"
+                  />
+                  <path
+                    d="M72.5511 50C72.5511 75.9542 62.4561 96.9897 49.9998 96.9897C37.5434 96.9897 27.4587 75.9542 27.4587 50C27.4587 24.0459 37.5537 3 49.9998 3C62.4458 3 72.5511 24.0459 72.5511 50Z"
+                    stroke="#FFFF31"
+                    stroke-width="5"
+                    stroke-miterlimit="10"
+                  />
+                  <path
+                    d="M97 50.0001C97 61.8789 75.9541 71.5202 50 71.5202C24.0458 71.5202 3.01025 61.8789 3.01025 50.0001C3.01025 38.1212 24.0458 28.4696 50 28.4696C75.9541 28.4696 97 38.1109 97 50.0001Z"
+                    stroke="#FFFF31"
+                    stroke-width="5"
+                    stroke-miterlimit="10"
+                  />
+                  <path
+                    d="M50 3V96.9897"
+                    stroke="#FFFF31"
+                    stroke-width="5"
+                    stroke-miterlimit="10"
+                  />
+                  <path
+                    d="M3 50.0002H96.9897"
+                    stroke="#FFFF31"
+                    stroke-width="5"
+                    stroke-miterlimit="10"
+                  />
+                </svg>
+              </div>
+             
               <!-- //workType01 earth -->
 
               <div class="code view">
@@ -675,7 +729,11 @@
               </div>
               <!-- //workType01 code view -->
 
-              <div class="site view">
+              <div class="site view"
+                data-scroll=""
+                data-scroll-speed="-1"
+                data-scroll-direction="horizontal"
+              >
                 <a
                   href="https://gayeongchoi.github.io/webs_class/webstandard/index.html"
                 >
@@ -731,7 +789,11 @@
               </div>
               <!-- //work__img -->
 
-              <p class="work__text">
+              <p class="work__text"
+                data-scroll=""
+                data-scroll-speed="2"
+                data-scroll-direction="horizontal"
+              >
                 프로젝트 사이트는 기획, 디자인, 컨셉트 등을 홀로 제작한 사이트
                 입니다. 사이트는 위의 소개한 PHP 사이트를 기반으로 코딩을 공부할
                 때 퀴즈 등의 게임으로 배우게 되면 재밌게 익하나갈 수 있을 것이라
@@ -740,22 +802,28 @@
                 퀴즈들로 구성 되어 있습니다.
               </p>
 
-              <svg
-                class="svg heart"
-                width="100"
-                height="100"
-                viewBox="0 0 100 100"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+              <div class="heart"
+                data-scroll=""
+                data-scroll-speed="3"
+                data-scroll-direction="horizontal"
               >
-                <path
-                  d="M49.9949 29.2819C49.9436 -1.85186 2.94879 -9.6135 3.00004 30.372C3.05129 70.3575 49.0724 97 49.0724 97H51.1223C51.1223 97 97.0512 70.2485 97 30.2194C96.9487 -9.80974 49.9436 -1.85186 49.9949 29.2819Z"
-                  fill="black"
-                  stroke="#88FFA4"
-                  stroke-width="5"
-                  stroke-miterlimit="10"
-                />
-              </svg>
+                <svg
+                  class="svg"
+                  width="100"
+                  height="100"
+                  viewBox="0 0 100 100"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M49.9949 29.2819C49.9436 -1.85186 2.94879 -9.6135 3.00004 30.372C3.05129 70.3575 49.0724 97 49.0724 97H51.1223C51.1223 97 97.0512 70.2485 97 30.2194C96.9487 -9.80974 49.9436 -1.85186 49.9949 29.2819Z"
+                    fill="black"
+                    stroke="#88FFA4"
+                    stroke-width="5"
+                    stroke-miterlimit="10"
+                  />
+                </svg>
+              </div>
               <!-- //workType02 heart -->
 
               <div class="code view">
@@ -797,7 +865,11 @@
                 </a>
               </div>
               <!-- //workType02 code view -->
-              <div class="site view">
+              <div class="site view"
+                data-scroll=""
+                data-scroll-speed="1"
+                data-scroll-direction="horizontal"
+              >
                 <a href="http://wwuu12366.dothome.co.kr/php/pages/main.php">
                   <svg
                     class="arrow"
@@ -849,7 +921,7 @@
           <div
           data-scroll
           data-scroll-direction="horizontal" 
-          data-scroll-speed="-25"
+          data-scroll-speed="-2"
           data-scroll-repeat="true"
           > look at script</div></header>
         <!-- //header -->
@@ -859,10 +931,7 @@
             <div class="scrip__img">
               <img class="img" src="./assets/img/script_music.png" alt="" />
             </div>
-            <div class="container"
-              data-scroll
-              data-scroll-speed="5"
-            >
+            <div class="container">
               <a
                 href="https://gayeongchoi.github.io/webs_class/javascript/effect/musicPlayer/index.html"
                 class="siteView"
@@ -901,9 +970,10 @@
               </a>
 
               <div
+                data-scroll
+                data-scroll-speed="5"
               >
-                <div class="scrip__title"
-                >
+                <div class="scrip__title">
                   music <br />
                   javascript
                 </div>
@@ -929,10 +999,7 @@
               <img class="img" src="./assets/img/script_card.png" alt="" />
             </div>
             <!-- //scrip__img : script_card -->
-            <div class="container"
-              data-scroll
-              data-scroll-speed="5"
-            >
+            <div class="container">
               <a
                 href="https://gayeongchoi.github.io/webs_class/game/index2.html"
                 class="siteView"
@@ -970,7 +1037,10 @@
                 </svg>
               </a>
 
-              <div>
+              <div
+                data-scroll
+                data-scroll-speed="5"
+              >
                 <div class="scrip__title">
                   memory<br />
                   javascript
@@ -998,10 +1068,7 @@
               <img class="img" src="./assets/img/script_typing.png" alt="타이핑" />
             </div>
             <!-- //scrip__img : script_typing -->
-            <div class="container"
-              data-scroll
-              data-scroll-speed="5"
-            >
+            <div class="container">
               <a 
                 href="https://gayeongchoi.github.io/webs_class/javascript/effect/typingGame/index.html"
                 class="siteView"
@@ -1039,17 +1106,23 @@
                 </svg>
               </a>
 
-              <div class="scrip__title">
-                typing <br />
-                javascript
+              <div
+                data-scroll
+                data-scroll-speed="5"
+              >
+                <div class="scrip__title">
+                  typing <br />
+                  javascript
+                </div>
+                <div class="scrip__text">
+                  영문 타이핑 연습을 할 수 있는 게임입니다. <br />
+                  입력칸에 예제에 맞춰 타이핑하면 타이머가 움직이기 시작하면서
+                  글자가 파란색으로 변합니다 틀리면 빨간색으로 표기 됩니다.
+                  1분동안한 타이핑 실수와 맞은 갯수등의 스코어가 하단에 표시
+                  됩니다 1분 동안 얼마나 타이핑 할 수 있는 지 확인해보세요!
+                </div>
               </div>
-              <div class="scrip__text">
-                영문 타이핑 연습을 할 수 있는 게임입니다. <br />
-                입력칸에 예제에 맞춰 타이핑하면 타이머가 움직이기 시작하면서
-                글자가 파란색으로 변합니다 틀리면 빨간색으로 표기 됩니다.
-                1분동안한 타이핑 실수와 맞은 갯수등의 스코어가 하단에 표시
-                됩니다 1분 동안 얼마나 타이핑 할 수 있는 지 확인해보세요!
-              </div>
+              
             </div>
             <!-- //container -->
           </div>
@@ -1060,10 +1133,7 @@
               <img class="img" src="./assets/img/script_tetris.png" alt="" />
             </div>
             <!-- //scrip__img : script_tertris -->
-            <div class="container"
-              data-scroll
-              data-scroll-speed="5"
-            >
+            <div class="container">
               <a
                 href="https://gayeongchoi.github.io/webs_class/game/tetrisGame/index.html"
                 class="siteView"
@@ -1101,7 +1171,10 @@
                 </svg>
               </a>
 
-              <div>
+              <div
+                data-scroll
+                data-scroll-speed="5"
+            >
                 <div class="scrip__title">
                   tetris <br />
                   javascript
@@ -1129,18 +1202,110 @@
         <header class="header">
           <div
           data-scroll
+          data-scroll-speed="-2"
           data-scroll-direction="horizontal" 
-          data-scroll-speed="30"
-          data-scroll-repeat="true"
           > LET’s see the effect</div></header>
         <!-- //header -->
+        
         <div class="container">
+        <div class="left">
           <div class="effType seach"
-          data-scroll
-          data-scroll-speed="7"
+            data-scroll
+            data-scroll-speed="-5"
+            data-scroll-direction="horizontal" 
           >
             <a
+              class="type"
               href="https://gayeongchoi.github.io/webs_class/javascript/effect/searchEffect01.html"
+            >
+              <div class="bar">
+                <svg
+                class="svg arrow"
+                width="90"
+                height="90"
+                viewBox="0 0 90 90"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="3"
+                  y="3.09546"
+                  width="83.6776"
+                  height="83.6776"
+                  fill="black"
+                  stroke="#8DFFA8"
+                  stroke-width="3"
+                />
+                <path
+                  d="M21.1335 70.0262L68.6661 22.4937"
+                  stroke="#8DFFA8"
+                  stroke-width="5"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M33.3276 21.8912L70.1909 20.9722L69.2719 57.8355"
+                  stroke="#8DFFA8"
+                  stroke-width="5"
+                  stroke-miterlimit="10"
+                />
+              </svg>
+                seach
+              </div>
+              <img src="assets/img/effect_search.png" alt="" />
+            </a>
+          </div>
+          <!-- //effType seach -->
+
+          <div class="effType yellow slider"
+             data-scroll
+            data-scroll-speed="-5"
+            data-scroll-direction="horizontal" 
+          >
+            <a
+              href="https://gayeongchoi.github.io/webs_class/javascript/effect/sliderEffect01.html"
+            >
+              <svg class="svg arrow yellow"
+                width="90"
+                height="90"
+                viewBox="0 0 90 90"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="3"
+                  y="3.09546"
+                  width="83.6776"
+                  height="83.6776"
+                  fill="black"
+                  stroke="#8DFFA8"
+                  stroke-width="3"
+                />
+                <path
+                  d="M21.1335 70.0262L68.6661 22.4937"
+                  stroke="#8DFFA8"
+                  stroke-width="5"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M33.3276 21.8912L70.1909 20.9722L69.2719 57.8355"
+                  stroke="#8DFFA8"
+                  stroke-width="5"
+                  stroke-miterlimit="10"
+                />
+              </svg>
+              <div class="bar">Slider</div>
+              <img src="assets/img/effect_slider.png" alt="" />
+            </a>
+          </div>
+          <!-- //effType slider -->
+
+          <div class="effType parallax"
+            data-scroll
+            data-scroll-speed="-5"
+            data-scroll-direction="horizontal" 
+          >
+            <a
+              href="https://gayeongchoi.github.io/webs_class/javascript/effect/parallaxEffect01.html"
             >
               <svg
                 class="svg arrow"
@@ -1172,15 +1337,18 @@
                   stroke-miterlimit="10"
                 />
               </svg>
-              <div class="bar">seach</div>
-              <img src="assets/img/effect_search.png" alt="" />
+              <div class="bar">Parallax</div>
+              <img src="assets/img/effect_parallax.png" alt="" />
             </a>
           </div>
-          <!-- //effType seach -->
+          <!-- //effType parallax -->
+        </div>
+        <!-- left -->
 
+        <div class="right">
           <div class="effType yellow quiz"
           data-scroll
-          data-scroll-speed="-8"
+          data-scroll-speed="-5"
           data-scroll-direction="horizontal" 
           >
             <a
@@ -1222,51 +1390,10 @@
           </div>
           <!-- //effType quiz -->
 
-          <div class="effType yellow slider"
-            data-scroll
-            data-scroll-speed="-3"
-          >
-            <a
-              href="https://gayeongchoi.github.io/webs_class/javascript/effect/sliderEffect01.html"
-            >
-              <svg class="svg arrow yellow"
-                width="90"
-                height="90"
-                viewBox="0 0 90 90"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  x="3"
-                  y="3.09546"
-                  width="83.6776"
-                  height="83.6776"
-                  fill="black"
-                  stroke="#8DFFA8"
-                  stroke-width="3"
-                />
-                <path
-                  d="M21.1335 70.0262L68.6661 22.4937"
-                  stroke="#8DFFA8"
-                  stroke-width="5"
-                  stroke-miterlimit="10"
-                />
-                <path
-                  d="M33.3276 21.8912L70.1909 20.9722L69.2719 57.8355"
-                  stroke="#8DFFA8"
-                  stroke-width="5"
-                  stroke-miterlimit="10"
-                />
-              </svg>
-              <div class="bar">Slider</div>
-              <img src="assets/img/effect_slider.png" alt="" />
-            </a>
-          </div>
-          <!-- //effType slider -->
-
           <div class="effType mouse"
             data-scroll
-            data-scroll-speed="3"
+            data-scroll-speed="-5"
+            data-scroll-direction="horizontal" 
           >
             <a
               href="https://gayeongchoi.github.io/webs_class/javascript/effect/mouseEffect01.html"
@@ -1307,53 +1434,9 @@
           </div>
           <!-- //effType mouse -->
 
-          <div class="effType parallax"
-            data-scroll
-            data-scroll-speed="10"
-            data-scroll-direction="horizontal" 
-          >
-            <a
-              href="https://gayeongchoi.github.io/webs_class/javascript/effect/parallaxEffect01.html"
-            >
-              <svg
-                class="svg arrow"
-                width="90"
-                height="90"
-                viewBox="0 0 90 90"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  x="3"
-                  y="3.09546"
-                  width="83.6776"
-                  height="83.6776"
-                  fill="black"
-                  stroke="#8DFFA8"
-                  stroke-width="3"
-                />
-                <path
-                  d="M21.1335 70.0262L68.6661 22.4937"
-                  stroke="#8DFFA8"
-                  stroke-width="5"
-                  stroke-miterlimit="10"
-                />
-                <path
-                  d="M33.3276 21.8912L70.1909 20.9722L69.2719 57.8355"
-                  stroke="#8DFFA8"
-                  stroke-width="5"
-                  stroke-miterlimit="10"
-                />
-              </svg>
-              <div class="bar">Parallax</div>
-              <img src="assets/img/effect_parallax.png" alt="" />
-            </a>
-          </div>
-          <!-- //effType parallax -->
-
           <div class="effType yellow gsap"
             data-scroll
-            data-scroll-speed="-3"
+            data-scroll-speed="-5"
             data-scroll-direction="horizontal" 
           >
             <a
@@ -1394,6 +1477,8 @@
           </div>
           <!-- //effType gsap -->
         </div>
+        <!-- right -->
+      </div>
       </section>
 
       <section id="contact" data-scroll-section >
@@ -1608,18 +1693,75 @@
     <span class="c-scrollbar_thumb" style="width: 384px; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 336.189, 0, 0, 1);"></span>
 
     <!-- script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- 3D효과 무조건 맨앞에 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="locomotive-scroll.min.js"></script>
+    
+
     <script>
+      //loading
+      function loading() {
+            console.log('loading')
+            let progress = $(".progress"),
+                progressText = progress.find(".progress-text"),
+                imgLoad = imagesLoaded("body"),
+                imgTotal = imgLoad.images.length,
+                imgLoaded = 0,
+                imgCurrent = 0,
+                progressTimer = setInterval(updateProgress, 1000 / 60);              
+            imgLoad.on("progress", function () {
+                imgLoaded++;
+            });
+
+            function updateProgress() {
+                let target = (imgLoaded / imgTotal) * 100;
+
+                imgCurrent += (target - imgCurrent) * 0.1;
+                progressText.text(Math.floor(imgCurrent) + "%");
+
+                if (imgCurrent >= 100) {
+                    clearInterval(progressTimer);
+                    progress.delay(1000).animate({
+                        top: "-130%"
+                    }, 400);
+
+                    $("body").addClass("show");                                        
+                }
+
+                if (imgCurrent > 99) {
+                    imgCurrent = 100;
+                    
+                }
+            }
+            $(".sec1_text div").fadeOut();
+        }
+        loading();
+
+      //locomotive-scroll
       const scroller = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
         smooth: true,
         repeat:true
       });
+
+      // function homeView() {
+      //   $(".sec1_text div").fadeOut();
+      // }
+      // homeView();
+     
+      //home
+      setTimeout(function() {
+        console.log("logo")
+        $(".sec1_text div").slideDown();
+      }, 2500);
+
+
+
     </script>
-    <!-- //locomotive-scroll -->
     
     <!-- home -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script id="js-vertex-shader" type="x-shader/x-vertex">
       uniform float time;
       varying vec3 vPosition;
