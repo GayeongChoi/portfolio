@@ -652,7 +652,7 @@ path {
 .effType.yellow .bar {
   background: var(--black);
 }
-.effType.yellow a:hover {
+a:hover .effType.yellow {
   color: var(--yellow);
 }
 @media (max-width: 800px) {
