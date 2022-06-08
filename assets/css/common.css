@@ -10,6 +10,13 @@
   --subFont: "ChosunNm";
 }
 
+a {
+  transition: all 1s;
+}
+a svg.arrow {
+  transition: all 1s;
+}
+
 a:hover {
   color: #8cffa7;
 }

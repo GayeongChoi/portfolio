@@ -20,6 +20,7 @@
   position: relative;
 }
 .sec1_text {
+  opacity: 1;
   color: #fff;
   font-size: 8vw;
   line-height: 1.1;
@@ -34,9 +35,15 @@
   -webkit-text-fill-color: transparent;
   position: relative;
   z-index: 10;
+  transition: all 1s;
 }
 .sec1_text > div:first-child {
   font-weight: 300;
+  transition: all 1s;
+}
+.sec1_text > div:nth-child(2) {
+  font-weight: 700;
+  transition: all 1s;
 }
 
 /* about */
