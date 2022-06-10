@@ -20,6 +20,7 @@
   position: relative;
 }
 .sec1_text {
+  width: 100vw;
   opacity: 1;
   color: #fff;
   font-size: 8vw;
@@ -32,7 +33,8 @@
     #daffe8
   );
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* -webkit-text-fill-color: transparent; */
+  color: transparent;
   position: relative;
   z-index: 10;
   transition: all 1s;
